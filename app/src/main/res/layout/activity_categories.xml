@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoriesActivity"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:src="@drawable/categoriesbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a category"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="26dp">
+    </TextView>
+
+    <TextView
+        android:text="Bath &amp; Body Care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:text="Face Care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="225dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:text="Hair Care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="55dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp">
+    </TextView>
+
+    <TextView
+        android:text="Personal Care"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="210dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp">
+    </TextView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/bodycareimg"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_column="1"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="25dp"
+                    android:clickable="true">
+                </ImageView>
+
+                <ImageView
+                    android:src="@drawable/facecareimg"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_column="2"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginLeft="30dp"
+                    android:clickable="true">
+                </ImageView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/haircareimg"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_column="1"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="25dp"
+                android:clickable="true">
+            </ImageView>
+
+            <ImageView
+                android:src="@drawable/personalcareimg"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_column="2"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="30dp"
+                android:clickable="true">
+            </ImageView>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginLeft="75dp"
+                android:id="@+id/logoutbutton"
+                android:onClick="logout">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next Page"
+                android:id="@+id/nextpage"
+                android:onClick="logout"
+                android:layout_marginLeft="50dp">
+            </Button>
+
+        </TableRow>
+    </TableLayout>
+
+
+</RelativeLayout>
