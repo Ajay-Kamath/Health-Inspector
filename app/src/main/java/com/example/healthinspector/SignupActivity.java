@@ -66,9 +66,20 @@ public class SignupActivity extends AppCompatActivity {
                 String password = mypassword.getText().toString().trim();
                 String fullname = myfullname.getText().toString();
 
+                String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+
+                if(TextUtils.isEmpty(fullname)){
+                    myfullname.setError("Full name is required.");
+                    return;
+                }
+
                 if(TextUtils.isEmpty(email)){
                     myemailid.setError("Email is required.");
                     return;
+                }
+
+                if (!email.matches(emailPattern)){
+                    Toast.makeText(getApplicationContext(),"Invalid email address", Toast.LENGTH_SHORT).show();
                 }
 
                 if(TextUtils.isEmpty(password)){

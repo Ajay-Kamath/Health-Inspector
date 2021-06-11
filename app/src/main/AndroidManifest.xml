@@ -14,7 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".OralCareActivity"></activity>
+        <activity android:name=".HairCareActivity" />
+        <activity android:name=".FaceCareActivity" />
+        <activity android:name=".BathAndBodyCareActivity" />
+        <activity android:name=".SubcategoriesActivity" />
+        <activity android:name=".ResultActivity" />
         <activity android:name=".ClickpictureActivity" />
         <activity android:name=".CategoriesActivity" />
         <activity android:name=".LoginActivity" />

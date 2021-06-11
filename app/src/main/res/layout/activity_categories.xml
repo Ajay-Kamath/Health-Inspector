@@ -55,11 +55,11 @@
     </TextView>
 
     <TextView
-        android:text="Personal Care"
+        android:text="Oral Care"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="390dp"
-        android:layout_marginLeft="210dp"
+        android:layout_marginLeft="225dp"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18dp">
     </TextView>
@@ -73,83 +73,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-                <ImageView
-                    android:src="@drawable/bodycareimg"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:layout_column="1"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginLeft="25dp"
-                    android:clickable="true">
-                </ImageView>
-
-                <ImageView
-                    android:src="@drawable/facecareimg"
-                    android:layout_width="140dp"
-                    android:layout_height="140dp"
-                    android:layout_column="2"
-                    android:layout_marginTop="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:clickable="true">
-                </ImageView>
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:src="@drawable/haircareimg"
+            <ImageButton
+                android:id="@+id/bathandbodycare"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_column="1"
-                android:layout_marginTop="130dp"
                 android:layout_marginLeft="25dp"
-                android:clickable="true">
-            </ImageView>
+                android:layout_marginTop="150dp"
+                android:clickable="true"
+                android:src="@drawable/bodycareimg"></ImageButton>
 
-            <ImageView
-                android:src="@drawable/personalcareimg"
+            <ImageButton
+                android:id="@+id/facecare"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_column="2"
-                android:layout_marginTop="130dp"
                 android:layout_marginLeft="30dp"
-                android:clickable="true">
-            </ImageView>
+                android:layout_marginTop="150dp"
+                android:clickable="true"
+                android:src="@drawable/facecareimg"></ImageButton>
 
         </TableRow>
 
-    </TableLayout>
-
-    <TableLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
         <TableRow
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Logout"
-                android:layout_marginLeft="75dp"
-                android:id="@+id/logoutbutton"
-                android:onClick="logout">
-            </Button>
+            <ImageButton
+                android:id="@+id/haircare"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_column="1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="130dp"
+                android:clickable="true"
+                android:src="@drawable/haircareimg"></ImageButton>
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Next Page"
-                android:id="@+id/nextpage"
-                android:onClick="logout"
-                android:layout_marginLeft="50dp">
-            </Button>
+            <ImageButton
+                android:id="@+id/oralcare"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_column="2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="130dp"
+                android:clickable="true"
+                android:src="@drawable/personalcareimg"></ImageButton>
 
         </TableRow>
+
     </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginLeft="75dp"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:id="@+id/logoutbutton"
+        android:onClick="logout">
+    </Button>
 
 
 </RelativeLayout>
